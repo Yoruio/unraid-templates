@@ -41,5 +41,5 @@
   </Environment>
   <Labels/>
   <Config Name="Discord Bot Token" Target="token" Default="" Mode="" Description="Discord Bot Token" Type="Variable" Display="always" Required="true" Mask="true"/>
-  <Config Name="Config" Target="/app/app/config" Default="/mnt/user/appdata/membarr/" Mode="rw" Description="Config path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/membarr/</Config>
+  <Config Name="Config" Target="/app/app/config" Default="/mnt/user/appdata/membarr/" Mode="rw" Description="Config path (containing app.db and config.ini)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/membarr/</Config>
 </Container>
