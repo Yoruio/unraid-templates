@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Membarr</Name>
+  <Repository>yoruio/membarr</Repository>
+  <Registry>https://hub.docker.com/r/yoruio/membarr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/yoruio/membarr</Project>
+  <Overview>Membarr is a discord bot that invites discord users to Plex and/or Jellyfin. Manually create users and invite channel members with a single command, or let Membarr automatically add channel members with a certain role.</Overview>
+  <Category>HomeAutomation: Tools: Other: MediaApp:Other MediaServer:Other</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/Sleepingpirates/invitarr-unraid/main/unraid-templates/invitarr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Yoruio/unraid-templates/master/membarr/icon.png</Icon>
+  <PostArgs/>
+  <CPUset/>
+  <DateInsonateLink/>
+  <Description>Membarr is a discord bot that invites discord users to Plex and/or Jellyfin. Manually create users and invite channel members with a single command, or let Membarr automatically add channel     <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Membarr/</HostDir>
+      <ContainerDir>/app/app/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>token</Nameabels/>
+  <Config Name="Discord Bot Token" Target="token" Default="" Mode="" Description="Discord Bot Token" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Config" Target="/app/app/config" Default="/mnt/user/appdata/Invitarr/" Mode="rw" Description="Config path" Type="Path" Display="always" 
